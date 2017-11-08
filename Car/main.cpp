@@ -4,6 +4,7 @@
 
 int main()
 {
+	/*
 	Car carA = Car();
 
 	unsigned int user_year;
@@ -39,13 +40,16 @@ int main()
 
 	cout << "The details of the car are:" << endl;
 	cout << carA;
+	*/
 
-	Car carB("Hyundai", "Veluster", "Black", 2017, 500);
+
+	Car carA("Hyundai", "Veluster", "Black", 2017, 500);
+	Car carB(carA);
+
+	cout << "Copy constructor demonstartion:" << endl;
+
 	cout << "CarA:" << carA << endl;
 	cout << "CarB:" << carB << endl;
 	cout << endl;
-
-	cout << "The car with the bigger engine is: " << carA.biggerEng(carB);
-	cout << "The newest car is: " << carA.newer(carB);
 
 }

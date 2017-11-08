@@ -23,10 +23,19 @@ public:
 	* Method:   Constructor
 	* Class:	Car
 	* Desc.:	Default constructor
-	* @param    
-	* @return   
+	* @param
+	* @return
 	*/
 	Car();
+
+	/**
+	* Method:   Copy Constructor
+	* Class:	Car
+	* Desc.:	Copy constructor
+	* @param
+	* @return
+	*/
+	Car(const Car&);
 
 	/**
 	* Method:   Constructor

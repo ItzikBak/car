@@ -12,6 +12,16 @@ Car::Car()
 	this->engineVol = 0;
 }
 
+Car::Car(const Car& other_car)
+{
+	strcpy_s(this->make, strlen(other_car.make) + 1, other_car.make);
+	strcpy_s(this->model, strlen(other_car.model) + 1, other_car.model);
+	strcpy_s(this->color, strlen(other_car.color) + 1, other_car.color);
+	this->year = other_car.year;
+	this->engineVol = other_car.engineVol;
+}
+
+
 Car::Car(unsigned int _year, unsigned int _engineVol):
 	year(_year), engineVol(_engineVol)
 {
